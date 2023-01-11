@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/altamark/go-timeblocks/timeblocks"
+	"github.com/prodsaga/go-timeblocks/timeblocks"
 )
 
 var locationNewYork, _ = time.LoadLocation("America/New_York")
