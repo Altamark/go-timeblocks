@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	timeblocks "github.com/altamark/go-timeblocks/timeblocks"
+	"github.com/prodsaga/go-timeblocks"
 )
 
 var (

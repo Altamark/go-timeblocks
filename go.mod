@@ -1,3 +1,3 @@
-module github.com/altamark/go-timeblocks
+module github.com/prodsaga/go-timeblocks
 
-go 1.17
+go 1.19
