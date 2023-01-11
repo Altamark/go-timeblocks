@@ -1,6 +1,9 @@
 package timeblocks
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 type Block struct {
 	Start time.Time
@@ -12,6 +15,10 @@ func New(start, end time.Time, location *time.Location) *Block {
 		Start: start,
 		End:   end,
 	}
+}
+
+func (b *Block) String() string {
+	return fmt.Sprintf("{ Start: %s, End: %s }", b.Start.Format(time.RFC3339), b.End.Format(time.RFC3339))
 }
 
 func (b *Block) MustNormalize(location *time.Location) *Block {
